@@ -1,0 +1,91 @@
+What is React?
+--> React is a front-end JavaScript library that is free and open-source that is used to create user interfaces using components. Meta and a group of independent developers and businesses manage it. React can be used to create single-page, mobile, or server-rendered apps. It can also be used with a number of JavaScript libraries or frameworks, such as Next.js.
+
+What is NPM in React Js?
+--> The abbreviation for Node Package Manager is NPM. It is the JavaScript programming language's package manager. JavaScript packages can be installed, uninstalled, updated, and managed with NPM. For the JavaScript runtime environment Node.js, it serves as the default package manager.
+
+What is Role of Node Js in react Js?
+--> Node.js handles server-side data transfer, and React handles front-end rendering of user interface components. React and Node.js work together to produce a unified and responsive online application.
+
+What is CLI command In React Js?
+--> A text-based user interface known as a command-line interface (CLI) enables users to communicate with computer programs by inputting instructions. System administrators and developers frequently utilize CLIs to automate processes and manage systems.
+
+What is Components in React Js?
+--> Independent and reusable code segments are called components. They return HTML and function independently, fulfilling the same function as JavaScript functions.
+
+1) Function Home(){
+	return(
+		<div>
+			home
+		</div>
+	)
+}
+
+2) class Home extends React.Component {
+  render() {
+    return <h2>Home</h2>;
+  }
+}
+
+
+What is Header and Content Components in React Js?
+--> 
+// Filename - App.js
+ 
+import React from "react";
+import Header from "./Header";
+ 
+function App() {
+    return (
+        // Using the newly created Header
+        // component in this main component
+        <Header />
+    );
+}
+export default App;
+
+How to install React Js on Windows, linux Operating System? How
+to install NPM and How to check version of NPM?
+-->
+-1 npm install -g npm 
+-2 npm -v
+-3 Npx create-react-app app name
+-4 cd my-app (optional)
+-5 npm start
+
+How to check version of React Js?
+-->
+Open the package.json file.
+Look for the react entries under dependencies. It will look something like this:
+{
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
+
+How to change in components of React Js?
+-->
+Example Below :-
+// Before
+class MyComponent extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>This is my component</h1>
+      </div>
+    );
+  }
+}
+
+// After
+class MyComponent extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>This is my updated component</h1>
+      </div>
+    );
+  }
+}
+
+
